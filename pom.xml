@@ -3,7 +3,7 @@
   <groupId>nl.big-o</groupId>
   <artifactId>liqp</artifactId>
   <packaging>jar</packaging>
-  <version>0.9.2.8-waas.1-SNAPSHOT</version>
+  <version>0.9.2.7-waas.1-SNAPSHOT</version>
   <name>Liqp</name>
   <description>A Java implementation of the Liquid templating engine backed up by an ANTLR grammar.</description>
   <url>https://github.com/bkiers/Liqp</url>
@@ -44,6 +44,17 @@
       </roles>
     </developer>
   </developers>
+
+  <distributionManagement>
+      <snapshotRepository>
+          <id>nexus-snapshots</id>
+          <url>https://nexuscentral.runwayci.com/repository/maven-snapshots/</url>
+      </snapshotRepository>
+      <repository>
+          <id>nexus-releases</id>
+          <url>https://nexuscentral.runwayci.com/repository/maven-releases/</url>
+      </repository>
+  </distributionManagement>
 
   <properties>
     <upstream.version>0.9.2.3</upstream.version>
