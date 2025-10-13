@@ -361,6 +361,9 @@
                </goals>
               </execution>
             </executions>
+            <configuration>
+              <skip>${gpg.skip}</skip>
+            </configuration>
           </plugin>
         </plugins>
       </build>
