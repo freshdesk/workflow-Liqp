@@ -30,15 +30,12 @@ public class Base64_EncodeTest {
         }
     }
 
-    /*
-     *
-     */
     @Test
     public void applyOriginalTest() {
         Filter filter = Filters.COMMON_FILTERS.get("base64_encode");
 
         TemplateContext context = new TemplateContext();
-        assertThat(filter.apply("hello", context), is((Object)"aGVsbG8="));
-        assertThat(filter.apply(null, context), is((Object)""));
+        assertThat(filter.apply("hello", context), is("aGVsbG8="));
+        assertThat(filter.apply(null, context), is(""));
     }
 }
