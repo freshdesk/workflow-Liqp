@@ -345,8 +345,9 @@ Release process into the [Central Repository](https://oss.sonatype.org/#welcome)
 performed with
 
 ```
- mvn release:clean release:prepare release:perform -P ossrh-release
+ mvn release:clean release:prepare release:perform
 ```
+> [!Ignore below]
 Make sure having in `~/.m2/settings.xml` this config(with your values):
 ```xml
 <settings>
