@@ -19,6 +19,7 @@ public final class Filters {
             new Append(), //
             new At_Least(), //
             new At_Most(), //
+            new Base64_Decode(), //
             new Base64_Encode(), //
             new Capitalize(), //
             new Ceil(), //
